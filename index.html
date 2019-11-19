@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./logic.js"></script>
+    <script src="./fetch.js"></script>
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: grey;
+        }
+
+        #cup {
+            width: 7em;
+            height: auto;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+        
+        #pot {
+            width: 20em;
+            height: auto;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #table {
+            width: 40em;
+            margin-bottom: 4em;
+        }
+    </style>
+
+</head>
+<body onload="initSite()">
+    <div class="container">
+        <img onclick="selectImage('cup')" src="./cup.png" id="cup" alt="">
+        <img onclick="selectImage('pot')" src="./pot.png" id="pot" alt="">
+        <img src="./table.png" id="table" alt="">
+    </div>
+</body>
+</html>
